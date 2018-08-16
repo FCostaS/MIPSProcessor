@@ -1,0 +1,27 @@
+module Processador(Clock,Reset,Halt,Input,Output);
+	input Clock,Reset,Halt;
+	input Input,Output;
+	
+	wire[31:0] Dados_1,Dados_2,Resultado,Endereco,Instrucao,ImediatoExtendido,M2R,Shifted,Offset,DataIO;
+	wire Desvio;
+	wire[4:0] WR;
+	
+	// Variáveis Unidade de Controle
+	wire RegWrite,AluSrc,MemWrite,MemRead,PCSrc,Mem2Reg;
+	
+	ProgramCounter(InputPC,Endereco,Clock,Reset,Halt);																			// Contador do Programa 
+	MemoriaInstrucoes(Endereco,Clock,Reset,Instrucao);																			// Memória de Instruções
+	ADD_Offset(Endereco,Offset,OutADD);																						   	// ADD com Offset
+	MUX_Mem2Reg(Endereco[20:16],Endereco[15:11],RegDst,WR);																	// MUX Memória de Instruções p/ Registradoress
+	Registradores(Endereco[25:21],Endereco[20:16],Endereco[15:11],WR,M2R,RegWrite,Dados_1,Dados_2,Clock);		// Banco de Registradores
+	MUX_Reg2ALU(Dados_2,ImediatoExtendido,AluSrc,Dados_2);																	// MUX do AluSrc
+	ExtensorDeSinal(Endereco[15:0],ImediatoExtendido);																			// Extensor de Sinal
+	ShiftLeft2(ImediatoExtendido,Shifted);																							// Deslocador de Bits
+	ADD(OutADD,Shifted,ResultadoSoma);																								// ADD do Deslocador de Bits
+	ULA(Dados_1,Dados_2,Endereco[31:26],Endereco[5:0],Desvio,Resultado);																// Unidade Lógica e Aritmética
+	Memoria(Resultado,Dados_2,MemWrite,MemRead,ReadData);																		// Memória
+	Mux_PCSrc(ResultadoSoma,OutADD,PCSrc,InputPC);					 															// MUX para PCSrc
+	Mux_4(ReadData,DataIO,Resultado,Mem2Reg,M2R);																				// MUX Memory/ModuloIO/ULAResult																												//
+	ModuloIO(ImediatoExtendido,Dados_1,OpIO,Input,Output);																	// // Nao Implementado
+	// UnidadedeControle(Endereco[31:26],OpIO,OpALU,MemRead,MemWrite,RegWrite,AluSrc,RegDst,Desvio,Mem2Reg)	// // Nao Implementado
+endmodule

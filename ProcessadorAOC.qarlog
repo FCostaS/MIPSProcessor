@@ -1,0 +1,38 @@
+Quartus Prime Archive log --	C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProcessadorAOC.qarlog
+
+Archive:	C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProcessadorAOC.qar
+Date:		Sat Jul 07 02:47:48 2018
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ADD.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ADD_Offset.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Bin2BCD.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ControleULA.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/DeBounce.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Display7Segmentos.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Esquematico.bdf
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ExtensorDeSinal.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Interface.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/MUX_Mem2Reg.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/MUX_Reg2ALU.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/MemoriaDados.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/MemoriaInstrucoes.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ModuloIO.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Mux_4.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Mux_PCSrc.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProcessadorAOC.qpf
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProcessadorAOC.qsf
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProcessadorAOC.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProcessadorAOC_assignment_defaults.qdf
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ProgramCounter.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Registradores.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ShiftLeft2.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Temporizador.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/ULA.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/UnidadedeControle.v
+C:/Users/fcsou/Desktop/Disciplinas/LSC_AOC/ProcessadorAOC/Waveform11.vwf
+	======= Total: 27 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

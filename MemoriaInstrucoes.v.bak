@@ -1,0 +1,18 @@
+module MemoriaInstrucoes(Endereco,Clock,Reset,Instrucao);
+	input [31:0] Endereco;
+	input Clock,Reset;
+	output reg [31:0] Instrucao;
+	
+	reg[31:0] Memory[511:0];
+
+	always @(posedge Clock)
+	begin
+		if(Reset == 0)
+		begin
+			
+		
+		
+		end	
+	end
+	
+endmodule

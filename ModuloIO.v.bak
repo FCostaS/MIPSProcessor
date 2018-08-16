@@ -1,0 +1,12 @@
+module ModuloIO(ImediatoExtendido,Dados_1,OpIO,Input,Output);
+	input [31:0] ImediatoExtendido,Dados_1,Input;
+	input OpIO;
+	output Output;
+
+	always@(*)
+	begin
+	
+	
+	end
+
+endmodule

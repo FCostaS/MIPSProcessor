@@ -1,0 +1,18 @@
+module Mux_PCSrc(ResultadoSoma,OutADD,PCSrc,InputPC);
+	input [31:0] OutADD,ResultadoSoma;
+	input PCSrc;
+	output reg [31:0] InputPC;
+
+	always@(PCSrc or OutADD or ResultadoSoma)
+	begin
+		if( PCSrc == 1'B0 ) // OutADD||ResultadoSoma 0:1
+		begin
+			InputPC = OutADD;
+		end
+			else
+			begin
+				InputPC = ResultadoSoma;
+			end
+	end
+
+endmodule

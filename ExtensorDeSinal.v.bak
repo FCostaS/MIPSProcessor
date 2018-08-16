@@ -1,0 +1,10 @@
+module ExtensorDeSinal(Entrada,Saida);
+	input [15:0] Entrada;
+	output reg [31:0] Saida;
+
+	always@(*)
+	begin
+		Saida[15:0] = Entrada;
+	end
+
+endmodule

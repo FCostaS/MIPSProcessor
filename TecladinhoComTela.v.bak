@@ -1,0 +1,13 @@
+module Tecladinho(Switches,Output,Input,Set,Display,LED);
+	input Switches;
+	input [31:0] Output;
+	output [31:0] Input;
+	output Set,Display,LED;
+
+
+
+
+
+
+
+endmodule

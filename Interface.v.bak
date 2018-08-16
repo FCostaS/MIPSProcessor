@@ -1,0 +1,14 @@
+module Interface(Display,LED);
+
+	output Set,Display,LED;
+
+	always(*)
+	begin
+	
+
+	
+	
+	
+	end
+	
+endmodule

@@ -1,0 +1,10 @@
+module ADD(OutADD,Shifted,ResultadoSoma);
+	input [31:0] Shifted,OutADD;
+	output reg [31:0] ResultadoSoma;
+	
+	always@(*)
+	begin
+		ResultadoSoma = Shifted + OutADD;
+	end
+
+endmodule
